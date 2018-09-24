@@ -1,0 +1,53 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TriviaGame</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+<body>
+
+    <div class="outter page1">
+        <h3> Answer all questions within 10 seconds. Can interupt the game by pressing the Done button<br></h3>
+        <button class="start-button btn">Start</button>
+    </div>
+
+
+    <div class="outter page2">
+        <div class="container"> Time Remaining:</div>
+        <div class="container" id="timerDisplay">
+            Timer
+        </div>
+
+        <div class="container">
+                <div class="questions">
+                </div>
+        </div>
+        <input type="submit" name="submit" value="Done" id="submit">
+    </div>
+
+    <div class="outter page3">
+        <P> Game is done. See scores below</P>
+        
+        <p> Correct: </p>
+        <div class="correct">
+        </div>
+       
+        <p> Incorrect: </p>
+        <div class="incorrect">
+        </div>
+
+        <p> Unanswered: </p>
+        <div class="unanswered">
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/questions.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    
+</body>
+</html>
